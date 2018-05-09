@@ -2728,11 +2728,13 @@
 	              },
 	              _react2.default.createElement(_src.Sampler, {
 	                sample: 'samples/kick.wav',
-	                steps: [0, 2, 8, 10]
+	                steps: [0, 2, 8, 10],
+	                detune: 600
 	              }),
 	              _react2.default.createElement(_src.Sampler, {
 	                sample: 'samples/snare.wav',
-	                steps: [4, 12]
+	                steps: [4, 12],
+	                detune: 440
 	              })
 	            ),
 	            _react2.default.createElement(
@@ -3005,7 +3007,7 @@
 
 	var Harmony = exports.Harmony = function Harmony(props) {
 	    return _react2.default.createElement(_src.Synth, {
-	        gain: 0.1,
+	        gain: 0.2,
 	        type: 'triangle',
 	        steps: [
 	        // F major
@@ -3087,28 +3089,26 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Melody = exports.Melody = function Melody(props) {
-	    return _react2.default.createElement(
-	        _src.Delay,
-	        null,
-	        _react2.default.createElement(
-	            _src.Reverb,
-	            null,
-	            _react2.default.createElement(_src.Monosynth, {
-	                gain: 0.3,
-	                glide: 0.05,
-	                type: 'triangle',
-	                steps: [
-	                // F major
-	                [3, 4, 'g4'], [6, 4, 'e4'],
-	                // C Major
-	                [11, 4, 'd4'], [14, 4, 'c4'],
-	                //   // G major
-	                [19, 4, 'e4'], [22, 4, 'g4'],
-	                //     // A minor
-	                [27, 4, 'd4'], [30, 8, 'a3']]
-	            })
-	        )
-	    );
+	    return _react2.default.createElement(_src.Monosynth, {
+	        envelope: {
+	            attack: 0.01,
+	            decay: 0.1,
+	            sustain: 0.1,
+	            release: 0.1
+	        },
+	        gain: 0.6,
+	        glide: 0.01,
+	        type: 'sine',
+	        steps: [
+	        // F major
+	        [3, 4, 'g4'], [6, 2, 'e4'],
+	        // C Major
+	        [11, 4, 'd4'], [14, 2, 'c4'],
+	        //   // G major
+	        [19, 4, 'e4'], [22, 2, 'g4'],
+	        //     // A minor
+	        [27, 4, 'd4'], [30, 2, 'a3']]
+	    });
 	};
 
 	exports.default = Melody;
