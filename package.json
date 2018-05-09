@@ -13,6 +13,7 @@
     "clean": "rimraf dist",
     "clean-umd": "rimraf umd",
     "dist": "npm run clean && webpack && cp -a public/. dist/",
+    "gh-pages": "npm run clean && webpack && cp -a public/. docs/",
     "lint": "eslint src demo --fix",
     "flow-check": "flow check",
     "flow": "flow",
