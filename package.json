@@ -13,10 +13,11 @@
     "clean": "rimraf dist",
     "clean-umd": "rimraf umd",
     "dist": "npm run clean && webpack && cp -a public/. dist/",
-    "gh-pages": "npm run clean && webpack && cp -a public/. docs/",
+    "gh-pages": "cp -Forc -Recurse dist/* docs",
     "lint": "eslint src demo --fix",
     "flow-check": "flow check",
     "flow": "flow",
+    "webpack": "webpack",
     "umd": "npm run clean-umd && webpack --config webpack.config.umd.js"
   },
   "author": "Ken Wheeler",
@@ -58,6 +59,7 @@
     "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
+    "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^1.15.0"
   },
   "sideEffects": false

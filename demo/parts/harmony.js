@@ -4,7 +4,7 @@ import { Synth } from '../../src';
 
 export const Harmony = (props) => (
     <Synth
-                gain={0.1}
+                gain={0.2}
                 type="triangle"
                 steps={[
                   // F major
