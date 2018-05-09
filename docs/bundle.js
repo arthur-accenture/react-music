@@ -2970,7 +2970,13 @@
 
 	var Bass = exports.Bass = function Bass(props) {
 	  return _react2.default.createElement(_src.Synth, {
-	    gain: 0.7,
+	    envelope: {
+	      attack: 0.2,
+	      decay: 0.05,
+	      sustain: 0.05,
+	      release: 0.05
+	    },
+	    gain: 0.9,
 	    type: 'sine',
 	    steps: [
 	    // F major
@@ -2980,7 +2986,7 @@
 	    //   // G major
 	    [16, 8, ['g2']],
 	    //     // A minor
-	    [24, 8, ['c2']]]
+	    [24, 8, ['a2']]]
 	  });
 	};
 
