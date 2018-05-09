@@ -4,6 +4,9 @@
   Make music with React!
 </h4>
 
+
+## This is forked from FormidableLabs code as a place for me to experiment with the library they have created for generating music with React components.
+
 ***
 
 ![http://i.imgur.com/2t1NPJy.png](http://i.imgur.com/2t1NPJy.png)
