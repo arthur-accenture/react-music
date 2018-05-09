@@ -9,9 +9,7 @@ import {
 } from '../src';
 
 import Polysynth from './polysynth';
-import Melody from './melody';
-import Bass from './bass';
-import Harmony from './harmony';
+import {Melody, Bass, Harmony } from './parts';
 import Visualization from './visualization';
 
 import './index.css';

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Synth } from '../src';
+import { Synth } from '../../src';
 
-const Bass = (props) => (
+export const Bass = (props) => (
     <Synth
     gain={0.7}
     type="sine"

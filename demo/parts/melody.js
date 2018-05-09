@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Synth } from '../src';
+import { Synth } from '../../src';
 
-const Melody = (props) => (
+export const Melody = (props) => (
     <Synth
         gain={0.3}
         type="triangle"
