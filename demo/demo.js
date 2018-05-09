@@ -61,10 +61,12 @@ export default class Demo extends Component {
               <Sampler
                 sample="samples/kick.wav"
                 steps={[0, 2, 8, 10]}
+                detune={600}
               />
               <Sampler
                 sample="samples/snare.wav"
                 steps={[4, 12]}
+                detune={440}
               />
             </Sequencer>
             <Sequencer
