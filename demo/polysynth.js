@@ -13,13 +13,13 @@ const Polysynth = (props) => (
     <Reverb>
       <Synth
         type="sine"
-        gain={0.15}
+        gain={0.4}
         steps={props.steps}
       />
       <MoogFilter bufferSize={4096}>
         <Synth
           type="square"
-          gain={0.15}
+          gain={0.3}
           transpose={1}
           steps={props.steps}
         />
