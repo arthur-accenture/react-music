@@ -51,25 +51,25 @@ export default class Demo extends Component {
         }}>
         <Song
           playing={this.state.playing}
-          tempo={100}
+          tempo={180}
         >
           <Analyser onAudioProcess={this.handleAudioProcess}>
             <Sequencer
-              resolution={16}
+              resolution={8}
               bars={2}
             >
               <Sampler
                 sample="samples/kick.wav"
-                steps={[0, 2, 8, 10, 16, 18, 24, 26]}
+                steps={[0, 2, 8, 10]}
               />
               <Sampler
                 sample="samples/snare.wav"
-                steps={[4, 12, 20, 28]}
+                steps={[4, 12]}
               />
             </Sequencer>
             <Sequencer
-              resolution={16}
-              bars={2}
+              resolution={8}
+              bars={4}
             >
             {/* Bass */}
            <Bass/>
