@@ -69,17 +69,13 @@ export default class Demo extends Component {
                 detune={440}
               />
             </Sequencer>
-            <Sequencer
-              resolution={8}
-              bars={4}
-            >
+  
             {/* Bass */}
            <Bass/>
               {/* Harmony */}
               <Harmony/>
               {/* Melody */}
               <Melody/>
-            </Sequencer>
 
           </Analyser>
         </Song>

@@ -1,8 +1,12 @@
 import React from 'react';
 
-import { Monosynth, LFO } from '../../src';
+import { Monosynth, Sequencer } from '../../src';
 
 export const Melody = (props) => (
+    <Sequencer
+    resolution={8}
+    bars={4}
+  >
     <Monosynth
         envelope={{
             attack: 0.01,
@@ -27,9 +31,8 @@ export const Melody = (props) => (
             [27, 4, 'd4'],
             [30, 2, 'a3'],
         ]}
-    >
-
-    </Monosynth>
+    />
+    </Sequencer>
 );
 
 export default Melody;
