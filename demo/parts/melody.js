@@ -5,7 +5,7 @@ import { Monosynth, Sequencer } from '../../src';
 export const Melody = (props) => (
     <Sequencer
     resolution={8}
-    bars={4}
+    bars={8}
   >
     <Monosynth
         envelope={{
@@ -19,17 +19,29 @@ export const Melody = (props) => (
         type="sine"
         steps={[
             // F major
+            [0, 2, 'a4'],
             [3, 4, 'g4'],
             [6, 2, 'e4'],
             // C Major
-            [11, 4, 'd4'],
-            [14, 2, 'c4'],
-            //   // G major
-            [19, 4, 'e4'],
-            [22, 2, 'g4'],
-            //     // A minor
-            [27, 4, 'd4'],
+            [8, 4, 'g4'],
+            [11, 4, 'c4'],
+            // G major
+            [20, 4, 'e4'],
+            [24, 4, 'a3'],
+            // A minor           
+            [27, 4, 'g3'],
             [30, 2, 'a3'],
+            // F major
+            [32, 2, 'c4'],
+            [36, 2, 'd4'],
+            // C major
+            [40, 4, 'e4'],
+            [44, 4, 'g3'],
+            // G Major
+            [48, 4, 'e4'],
+            [52, 4, 'd4'],
+            // A major
+            [56, 4, 'a3'],
         ]}
     />
     </Sequencer>
