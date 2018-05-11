@@ -18,6 +18,7 @@ export const Melody = (props) => (
         glide={0.01}
         type="sine"
         steps={[
+            // 8 steps a bar
             // F major
             [0, 2, 'a4'],
             [3, 4, 'g4'],

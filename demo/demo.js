@@ -51,7 +51,7 @@ export default class Demo extends Component {
         }}>
         <Song
           playing={this.state.playing}
-          tempo={180}
+          tempo={220}
         >
           <Analyser onAudioProcess={this.handleAudioProcess}>
             <Beats/>

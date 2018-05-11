@@ -4,7 +4,7 @@ import { Synth, Sequencer } from '../../src';
 
 export const Harmony = (props) => (
     <Sequencer
-        resolution={8}
+        resolution={4}
         bars={4}
     >
         <Synth
@@ -12,13 +12,13 @@ export const Harmony = (props) => (
             type="triangle"
             steps={[
                 // F major
-                [0, 8, ['a4', 'c4']],
+                [0, 4, ['a4', 'c4']],
                 // C Major
-                [8, 8, ['e4', 'g4']],
+                [4, 4, ['e4', 'g4']],
                 //   // G major
-                [16, 8, ['b4', 'd4']],
+                [8, 4, ['b4', 'd4']],
                 //     // A minor
-                [24, 8, ['e4', 'a4']],
+                [12, 4, ['e4', 'a4']],
             ]}
         />
     </Sequencer>
