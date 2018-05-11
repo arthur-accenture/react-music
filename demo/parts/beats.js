@@ -8,7 +8,7 @@ export const Beats = (props) => (
     bars={1}
   >
     <Sampler
-      sample="/samples/kick.wav"
+      sample={process.env.SAMPLES_PATH + 'kick.wav'}
       steps={[0, 2]}
       detune={-1000}
     />

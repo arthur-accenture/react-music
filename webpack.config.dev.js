@@ -13,6 +13,11 @@ module.exports = {
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        SAMPLES_PATH: JSON.stringify('../samples/'),
+      },
+    }),
   ],
   module: {
     loaders: [{
