@@ -1,3 +1,4 @@
-export *  from './bass.js';
-export *  from './harmony.js';
-export * from './melody.js';
+export *  from './bass';
+export *  from './harmony';
+export * from './melody';
+export * from './beats';

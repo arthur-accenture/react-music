@@ -9,7 +9,7 @@ import {
 } from '../src';
 
 import Polysynth from './polysynth';
-import {Melody, Bass, Harmony } from './parts';
+import {Melody, Bass, Harmony, Beats } from './parts';
 import Visualization from './visualization';
 
 import './index.css';
@@ -54,21 +54,7 @@ export default class Demo extends Component {
           tempo={180}
         >
           <Analyser onAudioProcess={this.handleAudioProcess}>
-            <Sequencer
-              resolution={8}
-              bars={2}
-            >
-              <Sampler
-                sample="samples/kick.wav"
-                steps={[0, 2, 8, 10]}
-                detune={600}
-              />
-              <Sampler
-                sample="samples/snare.wav"
-                steps={[4, 12]}
-                detune={440}
-              />
-            </Sequencer>
+            <Beats/>
   
             {/* Bass */}
            <Bass/>
