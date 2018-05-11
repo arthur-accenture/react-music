@@ -4,8 +4,8 @@ import { Synth, Sequencer } from '../../src';
 
 export const Bass = (props) => (
   <Sequencer
-    resolution={8}
-    bars={4}
+    resolution={1}
+    bars={16}
   >
     <Synth
       envelope={{
@@ -18,13 +18,39 @@ export const Bass = (props) => (
       type="sine"
       steps={[
         // F major
-        [0, 8, ['f2']],
+        [0, 1, ['f2']],
         // C Major
-        [8, 8, ['c2']],
+        [1, 1, ['c2']],
         //   // G major
-        [16, 8, ['g2']],
+        [2, 1, ['g2']],
         //     // A minor
-        [24, 8, ['a2']],
+        [3, 1, ['a2']],
+
+        // F major
+        [4, 1, ['f2']],
+        // C Major
+        [5, 1, ['c2']],
+        //   // G major
+        [6, 1, ['g2']],
+        //     // A minor
+        [7, 1, ['a2']],
+
+        // F major
+        [8, 1, ['f2']],
+        // C Major
+        [9, 1, ['c2']],
+        // F major
+        [10, 1, ['f2']],
+        // C Major
+        [11, 1, ['c2']],
+
+        // F major
+        [12, 1, ['f2']],
+        // C Major
+        [13, 1, ['c2']],
+        // G major
+        [14, 1, ['g2']],
+
       ]}
     />
   </Sequencer>
