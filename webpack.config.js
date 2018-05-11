@@ -13,10 +13,8 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production'),
-        SAMPLES_PATH: JSON.stringify('./samples/'),
-      },
+      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.SAMPLES_PATH': JSON.stringify('./samples/'),
     }),
     new webpack.optimize.UglifyJsPlugin(),
   ],
